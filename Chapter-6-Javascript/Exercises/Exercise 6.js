@@ -5,15 +5,15 @@ function PetrolCalculator(){
         a = Number(document.petrol.litre.value);
         b = Number(document.petrol.numlitre.value);
         c = a * b;
-        document.getElementById("Total Amount").innerHTML = c.toFixed(2);
+        document.getElementById("Total").innerHTML = c.toFixed(2);
 
     } else if (litre == 1.72){
         a = 1.72;
         b = Number(document.petrol.numlitre.value);
         c = a * b;
-        document.getElementById("Total Amount").innerHTML = c.toFixed(2);
+        document.getElementById("Total").innerHTML = c.toFixed(2);
 
     } else if (litre < 1.72){
-        document.getElementById("Total Amount").innerHTML = "only input litre amount over 1.72";
+        document.getElementById("Total").innerHTML = "only input litre amount over 1.72";
     }
 }
